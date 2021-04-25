@@ -709,7 +709,7 @@
 
          <div class="row">
 
-            <div class="eight columns">
+            <div class="nine columns">
 <!-- form
                <form action="" method="post" id="contactForm" name="contactForm">
 					<fieldset>
@@ -743,24 +743,24 @@
 
 					</fieldset>
 				   </form> Form End -->
-               <script id="popup" src="https://formspree.io/js/formbutton-v1.0.4.min.js" defer></script>
-               <script>
-                 window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-                 formbutton("create", {
-                   action: "https://formspree.io/f/xyylzrje", 
-                   styles: {
-                   fontFamily:'"arial", sans-serif',
-                   button: {
-                     background: "#750FF7"
-                   },
-                   title: {
-                     background: "#750FF7",
-                     letterSpacing: "0.05em",
-                   }
-                 },
-                 title: "Let's Connect!", 
-               });
-               </script>
+               <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyylzrje" method="post">
+                  <div>
+                  <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@xyz.com" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Your message here" required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                  </fieldset>
+               </div>
+                  <div>
+                     <button class="submit" >Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
 
                <!-- contact-warning -->
                <div id="message-warning"> Error boy</div>
