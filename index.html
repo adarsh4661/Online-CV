@@ -710,8 +710,7 @@
          <div class="row">
 
             <div class="eight columns">
-
-               <!-- form -->
+<!-- form
                <form action="" method="post" id="contactForm" name="contactForm">
 					<fieldset>
 
@@ -743,7 +742,25 @@
                   </div>
 
 					</fieldset>
-				   </form> <!-- Form End -->
+				   </form> Form End -->
+               <script id="popup" src="https://formspree.io/js/formbutton-v1.0.4.min.js" defer></script>
+               <script>
+                 window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+                 formbutton("create", {
+                   action: "https://formspree.io/f/xyylzrje", 
+                   styles: {
+                   fontFamily:'"arial", sans-serif',
+                   button: {
+                     background: "#750FF7"
+                   },
+                   title: {
+                     background: "#750FF7",
+                     letterSpacing: "0.05em",
+                   }
+                 },
+                 title: "Let's Connect!", 
+               });
+               </script>
 
                <!-- contact-warning -->
                <div id="message-warning"> Error boy</div>
@@ -765,9 +782,8 @@
                                   Jashpur(C.G.)
                                   
                        </span><br>
-                             <span>+91-70007886798</span><br>
-                      
-                             +91-9685898988<br>
+                             <span>+91-7000788678</span>
+                             <br>
                        <span>adarsh4661@live.com</span>
                          </p>
   
